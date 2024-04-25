@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap" rel="stylesheet">
+    <title>Favorite</title>
+    <style>
+        *, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.Atas {
+    width: 100%;
+    height: 1481px;
+    background-color: #427D9D;
+}
+
+.Nava {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 1319px;
+    height: 80px;
+    background-color: #9BBEC8;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+.pertama {
+    color: #DDF2FD;
+    font-weight: 700;
+    font-family: 'Pixelify Sans';
+    font-size: 2rem;
+}
+
+.terakhir {
+    color: #164863;
+    font-weight: 400;
+    padding-left: 4px;
+    font-family: 'Pixelify Sans';
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 40%;
+    font-weight: 500;
+}
+
+.navigation>li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.navigation>li>button {
+    background-color: #DDF2FD;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.navigation>li>button ::before{
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to
+        right, #0F0F0F 0%, #232D3F 0%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.navigation>li>button>a {
+    color: #B3A492;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Pixelify Sans';
+}
+
+.navigation>li>button :hover::before {
+    width: 9em;
+}
+
+.navigation>li>img {
+    width: 50px;
+    height: 50px;
+    margin-left: 990%;
+    border-radius: 20%;
+}
+
+.fav {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Pixelify Sans';
+    margin-top: 2%;
+    color: #DDF2FD;
+}
+
+.mam {
+    width: 41rem;
+    height: 11rem;
+    margin-left: 25%;
+    margin-top: 4%;
+    background-color: #9BBEC8;
+    border-radius: 30px;
+    font-family: 'Pixelify Sans';
+}
+
+.p1 {
+   font-size: 20px;
+   text-align: center;
+}
+
+.fav1 {
+    position: absolute;
+    left: 5%;
+}
+
+.fav1>img {
+    border-radius: 6%;
+    box-shadow: 0px 0px 4px 4px #0F0F0F;
+}
+
+.stm {
+    margin-top: 10%;
+    margin-left: 36px;
+    font-family: 'Pixelify Sans';
+    color: #DDF2FD;
+}
+
+.music {
+    width: 41rem;
+    height: 11rem;
+    margin-left: 25%;
+    margin-top: 2%;
+    background-color: #9BBEC8;
+    border-radius: 30px;
+    font-family: 'Pixelify Sans';
+}
+
+.p2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.fav2 {
+    position: absolute;
+    left: 78%;
+}
+
+.fav2>img {
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 4px #0F0F0F;
+}
+
+.sts {
+    font-family: 'Pixelify Sans';
+    color: #DDF2FD;
+    margin-left: 61rem;
+    margin-top: 12%;
+}
+
+.gim {
+    width: 41rem;
+    height: 11rem;
+    margin-left: 25%;
+    margin-top: 2%;
+    background-color: #9BBEC8;
+    border-radius: 30px;
+    font-family: 'Pixelify Sans';
+}
+
+.p3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.fav3 {
+    position: absolute;
+    left: 34px;
+}
+
+.fav3>img {
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 4px #0F0F0F;
+}
+
+.stg {
+    margin-top: 7%;
+    margin-left: 19px;
+    font-family: 'Pixelify Sans';
+    color: #DDF2FD;
+}
+
+.sawat {
+    position: absolute;
+    left: 58rem;
+    top: 85%;
+}
+
+.wan1 {
+    position: absolute;
+    left: 64rem;
+    bottom: 35%;
+}
+
+.tutup {
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+}
+
+.tup1 {
+    position: absolute;
+    top: 36rem;
+    left: 22%;
+}
+
+.tup2 {
+    position: absolute;
+    right: 17rem;
+    bottom: 19%;
+}
+
+.tup3 {
+    position: absolute;
+    left: 61%;
+    top: 118%;
+}
+
+.tup4 {
+    position: absolute;
+    top: 148%;
+    left: 22%;
+}
+
+.awanpoin {
+    display: flex;
+    height: 133px;
+    margin-top: 2px;
+}
+    </style>
+</head>
+<body>
+    <div class="Atas">
+        <nav class="Nava">
+            <div class="brand">
+                <div class="pertama">detol</div>
+                <div class="terakhir">profile</div>
+            </div>
+            <ul class="navigation">
+                <li><button><a href="index.html">Home</a></button></li>
+                <li><button><a href="tentang.html">Profile</a></button></li>
+                <li><button><a href="hobi.html">Hobby</a></button></li>
+                <li><img src="BAKUGO.png" alt="..."></li>
+            </ul>
+        </nav>
+        <div class="fav"><h1>My Favorite</h1></div>
+        <div class="sawat"><img src="download-removebg-preview.png" width="150rem"></div>
+        <div class="wan1"><img src="Two_white-and-blue_clouds_illustration__Super_Mario_Bros__3_Cloud__pixel_art_transparent_background_PNG_clipart-removebg-preview.png" height="250rem"></div>
+        <div class="fav1"><img src="SteamboatTomyum KalduSapi Nyammy.jpeg" height="350rem"></div>
+        <div class="mam">
+            <center>
+            <h3>Favorite Food</h3>
+            </center>
+            <br>
+            <div class="p1"><p>I'm the type of person who often gets bored with things, one of which is food. That's why I have a lot of favorite foods such as spring rolls, rollade, fried squid flour, kangkung vegetables, etc. But the food that is now my favorite is steamboat.</p></div>
+        </div>
+        <div class="stm"><h1>Steamboat Tomyum</h1></div>
+            <div class="tup1"><img src="Super_Mario_Bros__Princess_Peach_Toad__rush_to_run__game__super_Mario_Bros__nintendo_png-removebg-preview (1).png" height="120rem"></div>
+            <div class="tup2"><img src="Super_Mario_Bros__Princess_Peach_Toad__rush_to_run__game__super_Mario_Bros__nintendo_png-removebg-preview (1).png" height="130rem"></div>
+            <div class="tup3"><img src="Super_Mario_Bros__Princess_Peach_Toad__rush_to_run__game__super_Mario_Bros__nintendo_png-removebg-preview (1).png" height="150rem"></div>
+            <div class="tup4"><img src="Super_Mario_Bros__Princess_Peach_Toad__rush_to_run__game__super_Mario_Bros__nintendo_png-removebg-preview (1).png" height="150rem"></div>
+        <div class="fav2"><img src="505.jpeg" width="200rem"></div>
+        <div class="music">
+            <center>
+                <h3>Favorite Music</h3>
+            </center>
+            <br>
+            <div class="p2"><p>Music tastes are just like food tastes, they often change and sometimes my music tastes are very random and make no sense. Examples of music that have been my favorite songs are Skechers-Dripreport, Why-Bazzi, 505-Arctic Monkeys, Piknik'72-Naif, Eurika Milik Kita-JKT48.</p></div>
+        </div>
+        <div class="sts"><h1>505 By Arctic Monkeys</h1></div>
+        <div class="fav3"><img src="My Ark Drawings.jpeg" width="280rem"></div>
+        <div class="gim">
+            <center>
+                <h3>Favorite Game</h3>
+            </center>
+            <br>
+            <div class="p3"><p>Unlike my favorite music and food, there are only a few favorite games. For example, Adventure games like Ark Survival Evolved, Fps games like Apex Legends, and finally racing games like NFS Heat. These 3 genres of games have been my favorites from childhood until now.</p></div>
+        </div>
+        <div class="stg"><h1>Ark Survival Evolved</h1></div>
+        <div class="awanpoin">
+            <img src="Super_Mario_Bros__Princess_Peach_Toad__rush_to_run__game__super_Mario_Bros__nintendo_png-removebg-preview (1).png" alt="">
+            <img src="Super_Mario_Bros__Princess_Peach_Toad__rush_to_run__game__super_Mario_Bros__nintendo_png-removebg-preview (1).png" alt="">
+            <img src="Super_Mario_Bros__Princess_Peach_Toad__rush_to_run__game__super_Mario_Bros__nintendo_png-removebg-preview (1).png" alt="">
+            <img src="Super_Mario_Bros__Princess_Peach_Toad__rush_to_run__game__super_Mario_Bros__nintendo_png-removebg-preview (1).png" alt="">
+            <img src="Super_Mario_Bros__Princess_Peach_Toad__rush_to_run__game__super_Mario_Bros__nintendo_png-removebg-preview (1).png" alt="">
+            <img src="Super_Mario_Bros__Princess_Peach_Toad__rush_to_run__game__super_Mario_Bros__nintendo_png-removebg-preview (1).png" alt="">
+        </div>
+    </div>
+</body>
+</html>
